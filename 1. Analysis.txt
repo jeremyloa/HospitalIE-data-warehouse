@@ -1,0 +1,123 @@
+JM22-1
+Qualif Data Warehouse
+Analysis
+--------------------------------------
+MEASUREMENT
+1. SalesTransaction
+TotalSalesEarning = SUM(TrSalesDetail.Quantity * MsMedicine.MedicineSellingPrice)
+TotalMedicineSold = SUM(TrSalesDetail.Quantity)
+
+2. PurchaseTransaction
+TotalPurchaseCost = SUM(TrPurchaseDetail.Quantity * MsMedicine.MedicineBuyingPrice)
+TotalMedicinePurchased = SUM(TrPurchaseDetail.Quantity)
+
+3. SubscriptionTransaction
+TotalSubscriptionEarning = SUM(MsBenefit.BenefitPrice) 
+TotalSubscriberCount = COUNT(TrSubscriptionHeader.CustomerID)
+
+4. ServiceTransaction
+TotalServiceEarning = SUM(TrServiceDetail.Quantity * MsTreatment.TreatmentPrice) 
+TotalDoctors = COUNT(MsDoctor.DoctorID)
+--------------------------------------
+DIMENSION
+1. MedicineDimension
+- MedicineCode [Primary Key]
+- MedicineID [Business Key]
+- MedicineName
+- MedicineSellingPrice
+- MedicineBuyingPrice
+- MedicineExpiredDate
+
+2. DoctorDimension
+- DoctorCode [Primary Key]
+- DoctorID [Business Key]
+- DoctorName 
+- DoctorDOB
+- DoctorAddress [Changing]
+- DoctorSalary [Historical]
+- ValidFrom
+- ValidTo
+
+3. StaffDimension
+- StaffCode [Primary Key]
+- StaffID [Business Key]
+- StaffName 
+- StaffDOB
+- StaffAddress [Changing]
+- StaffSalary [Historical]
+- ValidFrom
+- ValidTo
+
+4. CustomerDimension
+- CustomerCode [Primary Key]
+- CustomerID [Business Key]
+- CustomerName
+- CustomerGender [Derived: Male->M, Female->F]
+- CustomerAddress [Changing]
+
+5. BenefitDimension
+- BenefitCode [Primary Key]
+- BenefitID [Business Key]
+- BenefitName
+- BenefitPrice [Historical]
+- ValidFrom
+- ValidTo
+
+6. TreatmentDimension
+- TreatmentCode [Primary Key]
+- TreatmentID [Business Key]
+- TreatmentName
+- TreatmentPrice [Historical]
+- ValidFrom
+- ValidTo
+
+7. DistributorDimension
+- DistributorCode [Primary Key]
+- DistributorID [Business Key]
+- DistributorName 
+- DistributorAddress [Changing]
+- DistributorPhone [Changing]
+
+8. TimeDimension
+- TimeCode [Primary Key]
+- Date
+- Day
+- Month
+- Quarter
+- Year
+
+--------------------------------------
+FACT
+1. SalesFact
+- MedicineCode
+- StaffCode
+- CustomerCode
+- TimeCode
+- TotalSalesEarning = SUM(TrSalesDetail.Quantity * MsMedicine.MedicineSellingPrice)
+- TotalMedicineSold = SUM(TrSalesDetail.Quantity)
+
+2. PurchaseFact
+- MedicineCode
+- StaffCode
+- DistributorCode
+- TimeCode
+- TotalPurchaseCost = SUM(TrPurchaseDetail.Quantity * MsMedicine.MedicineBuyingPrice)
+- TotalMedicinePurchased = SUM(TrPurchaseDetail.Quantity)
+
+3. SubscriptionFact
+- CustomerCode
+- StaffCode
+- BenefitCode
+- TimeCode
+- TotalSubscriptionEarning = SUM(MsBenefit.BenefitPrice) 
+- TotalSubscriberCount = COUNT(TrSubscriptionHeader.CustomerID)
+
+4. ServiceFact
+- CustomerCode
+- TreatmentCode
+- DoctorCode
+- TimeCode
+- TotalServiceEarning = SUM(TrServiceDetail.Quantity * MsTreatment.TreatmentPrice) 
+- TotalDoctors = COUNT(MsDoctor.DoctorID)
+
+

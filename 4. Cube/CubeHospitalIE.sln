@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "CubeHospitalIE", "CubeHospitalIE\CubeHospitalIE.dwproj", "{F225862B-8A83-42FD-AAD2-D0985156E0B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F225862B-8A83-42FD-AAD2-D0985156E0B5}.Development|Default.ActiveCfg = Development
+		{F225862B-8A83-42FD-AAD2-D0985156E0B5}.Development|Default.Build.0 = Development
+		{F225862B-8A83-42FD-AAD2-D0985156E0B5}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DD91F3E-26B5-4F00-A008-E6BE3EA96A95}
+	EndGlobalSection
+EndGlobal

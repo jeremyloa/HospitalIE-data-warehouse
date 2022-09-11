@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3647fb9e-0470-4248-a33f-517ee42ff540" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>HospitalIE</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Purchase Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9e34a9cf-5ae8-4b96-ab72-8d9e13312a37">
+          <ID>Purchase Fact</ID>
+          <Name>Purchase Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4318ead8-bde7-4c0b-94bc-473c2f3fd968">
+            <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
+            <TableID>dbo_PurchaseFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1c9581ea-4024-44e1-9d99-dc46dea2fda6">
+          <ID>Sales Fact</ID>
+          <Name>Sales Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fddb1be7-bd2a-481b-a951-c97033a4a5e9">
+            <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
+            <TableID>dbo_SalesFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Service Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c6a163a9-2523-47e0-9e22-5da32b30afa5">
+          <ID>Service Fact</ID>
+          <Name>Service Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a1a0b167-89a8-4753-9e80-b81e48e6dca8">
+            <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
+            <TableID>dbo_ServiceFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Subscription Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2016ab7f-374f-488f-a793-35af6ad5be40">
+          <ID>Subscription Fact</ID>
+          <Name>Subscription Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d7134591-10f7-4042-b892-645fa90a5085">
+            <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
+            <TableID>dbo_SubscriptionFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

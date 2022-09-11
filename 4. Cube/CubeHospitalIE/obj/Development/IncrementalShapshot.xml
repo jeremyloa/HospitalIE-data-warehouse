@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CubeHospitalIE</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>0I/DclIGiq4xVgadTeKM9AMhBQc=11/09/2022 18:14:5911/09/2022 17:58:39</TimeStamp>
+        <ID>
+          <String>OLAP Hospital IE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>/aI4JTHwebRiziARsEq0Qs1Q77I=11/09/2022 18:01:1411/09/2022 18:01:14</TimeStamp>
+        <ID>
+          <String>OLAP Hospital IE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kdcc4++7b2bJ884vt0ANQ+RI8Eg=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <ID>
+          <String>Medicine Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>58SNV/BCOrSOHGTR2pmAY7ZCmBY=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <ID>
+          <String>Staff Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>bqr+14VaFaMBAstikAJaAYBVyQg=11/09/2022 18:10:5511/09/2022 18:07:54</TimeStamp>
+        <ID>
+          <String>Distributor Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>V28VRVv0q9PDvgOc8RxigJWNAlQ=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <ID>
+          <String>Customer Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>25xYbJJYR3wIjIFeLdz0bdX2Ojw=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <ID>
+          <String>Treatment Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pdH4disZue5Gwz8MaRS0jcyhOJs=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <ID>
+          <String>Doctor Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6CkJpiLnvfhHfVqzXTO/a6Mr4Vc=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <ID>
+          <String>Benefit Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>0tiQj+V3UXzDa134LEHWnB66gtE=11/09/2022 18:10:5711/09/2022 18:07:54BjaoEhK2aZWjiDxwfbItk/OBY6A=11/09/2022 18:07:5411/09/2022 18:07:54</TimeStamp>
+        <ID>
+          <String>HospitalIE</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>3WQzye4Uh5MYCVu6dVeh8pG/u+Y=11/09/2022 17:34:5011/09/2022 17:34:50</TimeStamp>
+      <ID>
+        <String>CubeHospitalIE</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-09-11T11:25:31.933333Z</LastDeployed>
+</DeploymentSnapshot>
