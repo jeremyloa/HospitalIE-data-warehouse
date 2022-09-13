@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="82d57168-55fe-4263-8532-de0f47db50c1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5f6f4eb4-f4ba-406d-84af-527b4388f6f1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Treatment Dimension</ID>
   <Name>Treatment Dimension</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,49 +68,49 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6984c4d9-91a4-4efc-9c36-49daf1cc518c">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="67bad064-3aa8-4bd4-9843-5c061742a97b">
     <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="03bc6d1f-9caa-479a-8fb8-db2f4cc5455f">
+  <ErrorConfiguration dwd:design-time-name="66d20249-43ea-4794-bd77-5603d2e4cbee">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="50091dde-3daa-4f93-9ee3-580e9d206281">
+    <Attribute dwd:design-time-name="24f814da-3b3a-44e2-9c56-9b8d9b36cf64">
       <ID>Treatment Code</ID>
       <Name>Treatment Code</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="76bc7fcf-8127-4d4c-992f-9dcc58d862e7">
+        <KeyColumn dwd:design-time-name="8e1395f2-49d1-4f9c-9409-f2ddbdd060f1">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d214be22-99e7-4a1f-b677-c24bb0cb98f7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f246e0dc-1d04-4425-99a4-a662eb81c7c8">
             <TableID>dbo_TreatmentDimension</TableID>
             <ColumnID>TreatmentCode</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="abcbf9f6-4c7c-43c4-b862-4e04920ad05f">
+        <AttributeRelationship dwd:design-time-name="c0c74d58-fbe3-44a7-9e15-4efa7c61de55">
           <AttributeID>Treatment ID</AttributeID>
           <Name>Treatment ID</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d6c33368-19c9-4995-9463-99e9db89e675">
+        <AttributeRelationship dwd:design-time-name="084c0a2c-a897-4f3a-9b98-24e918f7e490">
           <AttributeID>Treatment Name</AttributeID>
           <Name>Treatment Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="222df7ee-c42b-4d77-ab0d-d93f226e92c0">
+        <AttributeRelationship dwd:design-time-name="50fa8d5d-c783-4445-9de4-d32a44e19e53">
           <AttributeID>Treatment Price</AttributeID>
           <Name>Treatment Price</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1d88d2bc-ebf1-4ed8-a9ec-5f7b944ee66d">
+        <AttributeRelationship dwd:design-time-name="e0ca2774-8cfd-4473-aadf-be2ecef7246a">
           <AttributeID>Valid From</AttributeID>
           <Name>Valid From</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a2e8b9af-af06-4caf-9f7d-b07497324073">
+        <AttributeRelationship dwd:design-time-name="be7cd0a7-ca1e-4e55-b7fa-6533bfe0b594">
           <AttributeID>Valid To</AttributeID>
           <Name>Valid To</Name>
         </AttributeRelationship>
@@ -119,13 +119,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9941ff9e-2454-4f91-840d-985c80a4ed7b">
+    <Attribute dwd:design-time-name="4125a241-45fc-4849-8bee-684aa4fc84d5">
       <ID>Treatment ID</ID>
       <Name>Treatment ID</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="216a5240-3c66-4c30-b5d1-51cd40c27dd2">
+        <KeyColumn dwd:design-time-name="bf0c9c4c-d203-4395-be94-d3d858ad1722">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef1bc66b-d87b-427d-bde1-96503c2e4a5c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3769137d-aba9-47fd-84a1-a355a39dffde">
             <TableID>dbo_TreatmentDimension</TableID>
             <ColumnID>TreatmentID</ColumnID>
           </Source>
@@ -134,14 +134,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="dc621040-9e45-4878-9251-57b9335cb263">
+    <Attribute dwd:design-time-name="fdb2f245-bfff-41dd-b4c6-81593c6ec463">
       <ID>Treatment Name</ID>
       <Name>Treatment Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ad317ad4-1b31-45ab-9bc9-979dbf8a9cf0">
+        <KeyColumn dwd:design-time-name="1bc501e4-a0f9-4ce2-a6c8-39fc7aa817d0">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="677f770d-9f04-404c-9e12-34e24fa1359c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c239bc13-96c6-456d-812b-f60c94cd9af8">
             <TableID>dbo_TreatmentDimension</TableID>
             <ColumnID>TreatmentName</ColumnID>
           </Source>
@@ -150,13 +150,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1c3011e0-e50c-4cce-9402-7b8db628fed7">
+    <Attribute dwd:design-time-name="6dcc2ab9-a2a1-44c0-be56-4c00d6c14033">
       <ID>Treatment Price</ID>
       <Name>Treatment Price</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1418d081-5693-496e-887c-eda9c7eaa1dd">
+        <KeyColumn dwd:design-time-name="5c8120e1-7308-4a59-958f-9f3df7dab07b">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c07355c-80bf-4d1f-98da-8a37136f0eb0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3d3941a-d822-41e9-95e4-1bfa8a0f69e6">
             <TableID>dbo_TreatmentDimension</TableID>
             <ColumnID>TreatmentPrice</ColumnID>
           </Source>
@@ -165,13 +165,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="56de0d52-09d8-4f69-8d45-a25a9a2da2f2">
+    <Attribute dwd:design-time-name="8a3f03ec-98b0-4b27-ad08-c5b2f20f0681">
       <ID>Valid From</ID>
       <Name>Valid From</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a97e6989-1310-49d9-a158-771c23ebd8e3">
+        <KeyColumn dwd:design-time-name="ea688d72-bdba-4d0f-964e-35c706d6c687">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b9982384-b58c-46bc-9c94-89f82ccc6caf">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af0a4166-5fa8-40e1-9fe4-69f8550139be">
             <TableID>dbo_TreatmentDimension</TableID>
             <ColumnID>ValidFrom</ColumnID>
           </Source>
@@ -180,13 +180,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ce933adb-812e-4d39-b6dd-53194dc05bd1">
+    <Attribute dwd:design-time-name="90b8cd98-0f99-4223-962f-ac8ed625b57e">
       <ID>Valid To</ID>
       <Name>Valid To</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8c065e70-e5b4-49ce-b6ae-c75768a46f04">
+        <KeyColumn dwd:design-time-name="08d591f2-dd80-4727-80ab-a6f72a2d3cc4">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="726162bc-c1b2-4bc7-a134-8385ea6590e1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8e03b67-d269-495b-8227-98aadaefcc84">
             <TableID>dbo_TreatmentDimension</TableID>
             <ColumnID>ValidTo</ColumnID>
           </Source>

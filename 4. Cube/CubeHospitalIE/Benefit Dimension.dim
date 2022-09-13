@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="09d43831-d09a-4743-a2d1-78c67f7c3e4d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b279a95b-8076-4cc6-8383-ae4d1d6d6224" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Benefit Dimension</ID>
   <Name>Benefit Dimension</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,49 +68,49 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6a507aeb-8ae1-4739-8e65-6a99b271c776">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f3e2d8e9-3056-4c23-9c5f-54cbf37d13e6">
     <DataSourceViewID>OLAP Hospital IE</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="149c91ca-de96-4a57-811c-84245995f7c4">
+  <ErrorConfiguration dwd:design-time-name="578ef078-76d3-458e-a428-62c9bcbd3cb6">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="0c44ce93-a0d5-49d1-a7a9-0f2b947a62db">
+    <Attribute dwd:design-time-name="464c6737-0edf-49ab-a422-324b101c99f5">
       <ID>Benefit Code</ID>
       <Name>Benefit Code</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f005bb2b-4466-42e6-abc3-23c66bdb8c82">
+        <KeyColumn dwd:design-time-name="4ebb590f-c161-44d2-849b-732136144fd0">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="36149515-94a6-4feb-893f-0621b3f5f6b5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="022647e7-ca11-4af7-b63f-f615968103cf">
             <TableID>dbo_BenefitDimension</TableID>
             <ColumnID>BenefitCode</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="e3c6b982-be1a-49bf-83f4-4341a53c7c39">
+        <AttributeRelationship dwd:design-time-name="17303194-e53a-40d3-8c34-eeaa6eecc2c9">
           <AttributeID>Benefit ID</AttributeID>
           <Name>Benefit ID</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="97293ac9-b3ed-426b-9c52-ab5e8554415b">
+        <AttributeRelationship dwd:design-time-name="c2eeb04e-543a-4028-a951-cecd4c2e68fd">
           <AttributeID>Benefit Name</AttributeID>
           <Name>Benefit Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0a8c0157-c1da-4f12-943e-c96c999f107a">
+        <AttributeRelationship dwd:design-time-name="aaccaaa8-452d-4e0d-a7c9-e179ee8ee668">
           <AttributeID>Benefit Price</AttributeID>
           <Name>Benefit Price</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9a967792-b66b-4c13-ba71-c76a02400dbf">
+        <AttributeRelationship dwd:design-time-name="ea98cfc4-787f-476d-a635-dbe0b8f9b7f5">
           <AttributeID>Valid From</AttributeID>
           <Name>Valid From</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="62936f2e-ab63-4adb-8768-e2ab9b793984">
+        <AttributeRelationship dwd:design-time-name="5e99b733-7f4c-4121-b130-ddfd1eb6dd5f">
           <AttributeID>Valid To</AttributeID>
           <Name>Valid To</Name>
         </AttributeRelationship>
@@ -119,13 +119,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="87fe8020-c531-4aa9-bbf9-58a873cacf3a">
+    <Attribute dwd:design-time-name="e832dc85-caa2-4cf9-af42-ab24b9a681f9">
       <ID>Benefit ID</ID>
       <Name>Benefit ID</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9877d741-1ac4-4a54-bbd9-bd001a128146">
+        <KeyColumn dwd:design-time-name="38147838-de5d-4352-91d2-ead7c72e7590">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1a86c02-5ea2-498f-aec1-37a814ee2430">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5456b99d-9db0-4e8b-a02d-ba5635b2eac2">
             <TableID>dbo_BenefitDimension</TableID>
             <ColumnID>BenefitID</ColumnID>
           </Source>
@@ -134,14 +134,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="57fc20a2-9028-4aff-b64d-e8b7051d84bc">
+    <Attribute dwd:design-time-name="b8f87078-5466-4561-827c-9f681d1dd18b">
       <ID>Benefit Name</ID>
       <Name>Benefit Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a8770527-be82-4866-ab09-03ebf71371a6">
+        <KeyColumn dwd:design-time-name="46c94157-f7ce-4fbc-90d7-d69cc6bd5466">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8af60873-c477-4b99-a931-3663ae4f93dc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa5bbeb9-d60c-4b57-9b95-ac5b7633af02">
             <TableID>dbo_BenefitDimension</TableID>
             <ColumnID>BenefitName</ColumnID>
           </Source>
@@ -150,13 +150,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="55b15d14-0f5a-4019-a569-10c1507ce208">
+    <Attribute dwd:design-time-name="bd812efc-3ae0-49a6-9ddf-c060042e12da">
       <ID>Benefit Price</ID>
       <Name>Benefit Price</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0c754b0f-abc8-4df6-a4ef-c51c1fb42d4e">
+        <KeyColumn dwd:design-time-name="b5db1618-cf2f-4017-a048-088448c99788">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6ff8db8-a9c5-4e0a-9e54-11a5a8d98ddb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a5c850c-f5a6-40da-aa04-84b0a8caf5e5">
             <TableID>dbo_BenefitDimension</TableID>
             <ColumnID>BenefitPrice</ColumnID>
           </Source>
@@ -165,13 +165,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bc776b70-c475-483a-91f1-3d35c528a5b6">
+    <Attribute dwd:design-time-name="ddb11a92-a6a1-4260-b964-ac93a34e6c85">
       <ID>Valid From</ID>
       <Name>Valid From</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9c8d6a8d-119e-4cee-9166-c5180f742697">
+        <KeyColumn dwd:design-time-name="624a9689-0edb-4022-974b-3bb4bb172d67">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="79ed7fa3-601c-4d3c-ab4e-c82d19217833">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="60ec3717-115d-4de9-9c14-f3c23cefdf1a">
             <TableID>dbo_BenefitDimension</TableID>
             <ColumnID>ValidFrom</ColumnID>
           </Source>
@@ -180,13 +180,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="383e3117-9530-4977-9747-c278c8b9056e">
+    <Attribute dwd:design-time-name="1fab2c38-9743-46c6-b663-632c6f898719">
       <ID>Valid To</ID>
       <Name>Valid To</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="086ec2bc-7c86-40f0-b6d9-6f2f1969cdeb">
+        <KeyColumn dwd:design-time-name="fff07e8d-7795-4c0c-a84c-ab3147a0c5f9">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0183cd0a-66cb-4904-ba5b-8a003bf82a0c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df8ccaf9-bf0c-4bfb-8212-4e76af5dbfb5">
             <TableID>dbo_BenefitDimension</TableID>
             <ColumnID>ValidTo</ColumnID>
           </Source>

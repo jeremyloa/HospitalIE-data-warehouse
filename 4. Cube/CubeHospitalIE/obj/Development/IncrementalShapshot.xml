@@ -33,58 +33,79 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>kdcc4++7b2bJ884vt0ANQ+RI8Eg=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <TimeStamp>E3wGz3beudStw5t1/PFz66q4qbU=13/09/2022 17:28:1413/09/2022 17:26:08</TimeStamp>
         <ID>
           <String>Medicine Dimension</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>58SNV/BCOrSOHGTR2pmAY7ZCmBY=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <TimeStamp>RdGA+B+cRE/hqV/vPJFPlv6Au4E=13/09/2022 17:28:1413/09/2022 17:26:08</TimeStamp>
         <ID>
           <String>Staff Dimension</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>bqr+14VaFaMBAstikAJaAYBVyQg=11/09/2022 18:10:5511/09/2022 18:07:54</TimeStamp>
-        <ID>
-          <String>Distributor Dimension</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>V28VRVv0q9PDvgOc8RxigJWNAlQ=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <TimeStamp>lNMcgE896yZtYU3b99FTn9Lkwec=13/09/2022 17:28:1413/09/2022 17:26:08</TimeStamp>
         <ID>
           <String>Customer Dimension</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>25xYbJJYR3wIjIFeLdz0bdX2Ojw=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <TimeStamp>ZBuICaSitHoWh0BC75botaKj28s=13/09/2022 17:28:1413/09/2022 17:26:46</TimeStamp>
+        <ID>
+          <String>Distributor Dimension</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zSIJrNMRS0tm+kI/AcTicw96EvQ=13/09/2022 17:28:1413/09/2022 17:27:10</TimeStamp>
         <ID>
           <String>Treatment Dimension</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>pdH4disZue5Gwz8MaRS0jcyhOJs=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <TimeStamp>cGddJzPkiTzciTjMyG+n+l/JrEI=13/09/2022 17:28:1413/09/2022 17:27:10</TimeStamp>
         <ID>
           <String>Doctor Dimension</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>6CkJpiLnvfhHfVqzXTO/a6Mr4Vc=11/09/2022 18:10:5711/09/2022 18:07:54</TimeStamp>
+        <TimeStamp>V8XhjwOahKBQcP/+dNUq2bhTpnw=13/09/2022 17:28:1413/09/2022 17:27:27</TimeStamp>
         <ID>
           <String>Benefit Dimension</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>0tiQj+V3UXzDa134LEHWnB66gtE=11/09/2022 18:10:5711/09/2022 18:07:54BjaoEhK2aZWjiDxwfbItk/OBY6A=11/09/2022 18:07:5411/09/2022 18:07:54</TimeStamp>
+        <TimeStamp>pgJ6rMN8xEDCozpfMnESqt4oVsI=13/09/2022 17:28:1413/09/2022 17:26:08kh+AD33hpfpH3UT/Ub+REiMJQes=13/09/2022 17:26:0913/09/2022 17:26:08</TimeStamp>
         <ID>
-          <String>HospitalIE</String>
+          <String>SalesFact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>zieI0we2LMCECr2KhgKOl1qF/rc=13/09/2022 17:28:1413/09/2022 17:26:46SwglndflPiZC4u/P1i7QFp6TZck=13/09/2022 17:26:4613/09/2022 17:26:46</TimeStamp>
+        <ID>
+          <String>PurchaseFact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>+a0kWTASsRC5vymuT61RmQOCdh0=13/09/2022 17:28:1413/09/2022 17:27:10WxGHtbBdjh9UF5mtkAFCR2zaFJo=13/09/2022 17:27:1013/09/2022 17:27:10</TimeStamp>
+        <ID>
+          <String>ServiceFact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>wtWkNH9r5xScBbccWxeYYSMtXFk=13/09/2022 17:28:1413/09/2022 17:27:27K99edyoFYXi18V157iF+eg0SMpg=13/09/2022 17:27:2713/09/2022 17:27:27</TimeStamp>
+        <ID>
+          <String>SubscriptionFact</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -99,5 +120,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2022-09-11T11:25:31.933333Z</LastDeployed>
+  <LastDeployed>2022-09-13T10:37:34.636667Z</LastDeployed>
 </DeploymentSnapshot>

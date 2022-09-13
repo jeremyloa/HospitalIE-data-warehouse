@@ -18,10 +18,10 @@
         <ID>Staff Dimension</ID>
       </Dimension>
       <Dimension>
-        <ID>Distributor Dimension</ID>
+        <ID>Customer Dimension</ID>
       </Dimension>
       <Dimension>
-        <ID>Customer Dimension</ID>
+        <ID>Distributor Dimension</ID>
       </Dimension>
       <Dimension>
         <ID>Treatment Dimension</ID>
@@ -35,7 +35,20 @@
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>HospitalIE</ID>
+        <ID>SalesFact</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Sales Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>PurchaseFact</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Purchase Fact</ID>
@@ -45,14 +58,11 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
-          <MeasureGroup>
-            <ID>Sales Fact</ID>
-            <Partitions>
-              <Partition>
-                <ID>Sales Fact</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>ServiceFact</ID>
+        <MeasureGroups>
           <MeasureGroup>
             <ID>Service Fact</ID>
             <Partitions>
@@ -61,6 +71,11 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>SubscriptionFact</ID>
+        <MeasureGroups>
           <MeasureGroup>
             <ID>Subscription Fact</ID>
             <Partitions>

@@ -8,32 +8,62 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>HospitalIE.cube</Name>
-      <FullPath>HospitalIE.cube</FullPath>
+      <Name>SalesFact.cube</Name>
+      <FullPath>SalesFact.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>HospitalIE.partitions</Name>
-          <FullPath>HospitalIE.partitions</FullPath>
+          <Name>SalesFact.partitions</Name>
+          <FullPath>SalesFact.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PurchaseFact.cube</Name>
+      <FullPath>PurchaseFact.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>PurchaseFact.partitions</Name>
+          <FullPath>PurchaseFact.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ServiceFact.cube</Name>
+      <FullPath>ServiceFact.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>ServiceFact.partitions</Name>
+          <FullPath>ServiceFact.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>SubscriptionFact.cube</Name>
+      <FullPath>SubscriptionFact.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>SubscriptionFact.partitions</Name>
+          <FullPath>SubscriptionFact.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Medicine Dimension.dim</Name>
-      <FullPath>Medicine Dimension.dim</FullPath>
+      <Name>Medicine Dimension 1.dim</Name>
+      <FullPath>Medicine Dimension 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Staff Dimension.dim</Name>
-      <FullPath>Staff Dimension.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Distributor Dimension.dim</Name>
-      <FullPath>Distributor Dimension.dim</FullPath>
+      <Name>Staff Dimension 1.dim</Name>
+      <FullPath>Staff Dimension 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Customer Dimension.dim</Name>
       <FullPath>Customer Dimension.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Distributor Dimension.dim</Name>
+      <FullPath>Distributor Dimension.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Treatment Dimension.dim</Name>
